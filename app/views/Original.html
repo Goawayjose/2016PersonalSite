@@ -1,0 +1,476 @@
+<main>
+    <style>
+
+        .body{
+            display: block;
+            height: 100%;
+width: 100%;
+background-image: url(../img/DSC_1801.jpg);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+            position: absolute;
+            top: 0;
+        }
+
+        header {
+    margin-left: 100px;
+    position: absolute;
+    color: white;
+}
+
+
+
+
+/*yum controls the background animation*/
+
+.yum {
+-webkit-animation: yummy 1s forwards;
+-moz-animation: yummy 1s forwards;
+-o-animation: yummy 1s forwards;
+-ms-animation: yummy 1s forwards;
+}
+
+
+@-webkit-keyframes yummy {
+    0%{ -webkit-transform:rotate(inherit);
+        border-radius:5000px;}
+
+
+    100%{
+        -webkit-transform:rotate(720deg);
+        top:0%;
+        height:100%;
+        width:100%;
+        left:0;
+        right:0;
+    }
+}
+
+@-moz-keyframes yummy {
+    0%{ -moz-transform:rotate(inherit);
+        border-radius:5000px;}
+
+
+    100%{
+        -moz-transform:rotate(720deg);
+        top:0%;
+        height:100%;
+        width:100%;
+        left:0;
+        right:0;
+    }
+}
+
+@-o-keyframes yummy {
+        0%{ -o-transform:rotate(inherit);
+        border-radius:5000px;}
+
+
+    100%{
+        -o-transform:rotate(720deg);
+        top:0%;
+        height:100%;
+        width:100%;
+        left:0;
+        right:0;
+    }
+}
+
+@-ms-keyframes yummy {
+    0%{ -ms-transform:rotate(inherit);
+        border-radius:5000px;}
+
+
+    100%{
+        -ms-transform:rotate(720deg);
+        top:0%;
+        height:100%;
+        width:100%;
+        left:0;
+        right:0;
+    }
+}
+
+
+
+#container{
+      background-image: url(../img/roco.png);
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display:block;
+    align-content: center;
+    z-index: 2;
+}
+
+#shadow{
+    color: white;
+    position:relative;
+    left: 50%;
+    top:50%;
+    border-radius: 465px;
+    width:500px;
+    height: 500px;
+    z-index: 21;
+}
+
+
+.circle1{
+    position:absolute;
+    left: 50%;
+    top:50%;
+    margin-top: -210px;
+    margin-left: -210px;
+    border-radius: 465px;
+    width:420px;
+    height: 420px;
+    background-color: rgb(251, 48, 110);
+    z-index: 3;}
+
+.circle1:hover {
+		transform: scale(1.05);
+        background: linear-gradient(rgb(255, 161, 189), rgb(255, 53, 114));
+	}
+
+.circle2:hover {
+		transform: scale(1.05);
+        background: linear-gradient(rgb(97, 129, 203), rgb(63, 72, 93));
+	}
+
+.circle3:hover {
+		transform: scale(1.05);
+        background: linear-gradient(rgb(0, 255, 20), rgb(0, 141, 11));
+	}
+
+.circle4:hover {
+		transform: scale(1.05);
+        background-color: rgb(0, 255, 20);
+	}
+
+
+
+.darken {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .0;
+}
+
+.circle2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -170px;
+    margin-left: -170px;
+    border-radius: 465px;
+    width: 340px;
+    height: 340px;
+    background-color: rgb(63, 72, 93);
+    background-position: -700px;
+    z-index: 3;
+
+}
+
+.circle3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -135px;
+    margin-left: -135px;
+border-radius: 465px;
+    width:270px;
+    height: 270px;
+    background-color:rgb(0, 255, 20);
+    z-index: 3;
+    overflow: visible;
+}
+
+.circle4{
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+border-radius: 465px;
+    width:200px;
+    height: 200px;
+    background-image: url(img/first.png);
+    background-size: cover;
+    transform: rotate(0deg);
+    overflow: visible;
+    z-index: 4;
+}
+
+
+.rot1{
+-webkit-animation: spin 0.7s ease-in;
+-moz-animation: spin 0.7s ease-in;
+-o-animation: spin 0.7s ease-in;
+-ms-animation: spin 0.7s ease-in;
+}
+@-webkit-keyframes spin {
+0% { -webkit-transform: rotate(inherit);}
+100% { -webkit-transform: rotate(60deg);}
+}
+@-moz-keyframes spin {
+0% { -moz-transform: rotate(inherit);}
+100% { -moz-transform: rotate(60deg);}
+}
+@-o-keyframes spin {
+0% { -o-transform: rotate(inherit);}
+100% { -o-transform: rotate(60deg);}
+}
+@-ms-keyframes spin {
+0% { -ms-transform: rotate(inherit);}
+100% { -ms-transform: rotate(60deg);}
+}
+
+
+.rot2{
+-webkit-animation: spin1 0.7s linear;
+-moz-animation: spin1 0.7s linear;
+-o-animation: spin1 0.7s linear;
+-ms-animation: spin1 0.7s linear;
+}
+@-webkit-keyframes spin1 {
+0% { -webkit-transform: rotate(inherit);}
+100% { -webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin1 {
+0% { -moz-transform: rotate(inherit);}
+100% { -moz-transform: rotate(360deg);}
+}
+@-o-keyframes spin1 {
+0% { -o-transform: rotate(inherit);}
+100% { -o-transform: rotate(360deg);}
+}
+@-ms-keyframes spin1 {
+0% { -ms-transform: rotate(inherit);}
+100% { -ms-transform: rotate(360deg);}
+}
+
+
+/*nav text*/
+
+
+.navtext {
+    position: absolute;
+    left: -55px;
+    top: -20px;
+}
+
+#navabo {
+    font-size: 120px;
+    margin-left: -150px;
+    top: -100px;
+}
+
+#navexp {
+    font-size: 72px;
+    margin-left: -120px;
+    top: -60px;
+}
+
+#navwor {
+    font-size: 75px;
+    margin-left: -80px;
+    top: -60px;
+}
+
+#glasses {
+    top: 15px;
+    top: 0px;
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    font-size: 2em;
+    color: white;
+}
+
+.Sglas {
+    color: black;
+}
+
+.title {
+    color: white;
+    position: absolute;
+    z-index: 10;
+    top: -20px;
+    left: 50px;
+}
+
+
+        .SecondHalf {
+            width: 100%;
+            height: 500px;
+            padding-top: 150px;
+            background: rgb(63, 72, 93);
+        }
+
+        #rocoA {
+    padding-top:45px;
+    position: relative;
+    left: 50%;
+    margin-left: -150px;
+    height: 300px;
+    width: 300px;
+    background-image: url(img/roco.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 9;
+}
+
+#BCRCL2{
+    position:relative;
+    margin-top: -200px;
+    margin-left: -20px;
+    left:50%;
+    border-radius: 465px;
+    width:40px;
+    height: 40px;
+    background-color: rgb(255, 53, 114);
+    z-index: 11;}
+
+#BCRCL3{
+    position:relative;
+    left: 50%;
+    margin-left: -90px;
+    border-radius: 465px;
+    width:180px;
+    height: 180px;
+    background-image:  url(img/IMG_0742.jpg);
+    background-position: bottom;
+    background-size: cover;
+    z-index: 10;
+   }
+
+.orb {
+-webkit-animation: orbit 3s infinite;
+-moz-animation: orbit 3s infinite;
+-o-animation: orbit 3s infinite;
+-ms-animation: orbit 3s infinite;
+   }
+
+@-webkit-keyframes orbit {
+        from { -webkit-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+@-moz-keyframes orbit {
+        from { -moz-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+@-o-keyframes orbit {
+        from { -o-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+@-ms-keyframes orbit {
+        from { -ms-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { -ms-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+
+
+    </style>
+
+
+
+        <div ng-include="'views/NavBar.html'"></div>
+<div class="body">
+    <header>
+    </br>
+  </br>
+<h1>Jose Ramirez</h1>
+<h3>Web Development goals:</h3>
+    </header>
+
+
+<!-- start of nav circles -->
+    <div id="container" class="rot2">
+
+        <div id="shadow">
+            <h3 class="navtext" id="navabo">First</h3>
+            <h3 class="navtext" id="navexp">Second</h3>
+            <h3 class="navtext" id="navwor">Third</h3>
+        </div>
+
+
+       <a href="#/MarvinGaye">
+           <div class="circle1">
+               <span class="glyphicon glyphicon-sunglasses" id="glasses"></span>
+           </div></a>
+        <a href="#/weird">
+            <div class="circle2">
+                <span class="glyphicon glyphicon-education" id="glasses"></span>
+            </div>
+        </a>
+        <a href="#/Change">
+            <div class="circle3">
+                        <span class="glyphicon glyphicon-globe" id="glasses"></span>
+
+            </div>
+        </a>
+            <div class="circle4">
+
+            </div>
+    </div>
+    <!-- end of nav circles -->
+
+  <div class="SecondHalf">
+        <div id="rocoA">
+            <div id="BCRCL3"></div></div>
+        <div id="BCRCL2" class="orb"></div>
+
+
+
+  </div>
+
+    <script>
+
+          var circle1 = $('.circle1')
+    var circle2 = $('.circle2')
+    var circle3 = $('.circle3')
+    var circle4 = $('.circle4')
+
+    var navabo = $('#navabo')
+    var navexp = $('#navexp')
+    var navwor = $('#navwor')
+
+    navabo.hide();
+    navexp.hide();
+    navwor.hide();
+
+    circle1.mouseenter(function(){
+        navabo.show();
+        $('.glyphicon-sunglasses').css({'color':'rgb(63, 72, 93)'});
+    });
+    circle1.mouseleave(function(){
+        navabo.hide();
+        $('.glyphicon-sunglasses').css({'color': 'white'});
+    });
+
+    circle2.mouseenter(function(){
+        navexp.show();
+$('.glyphicon-education').css({'color':'rgb(230, 19, 83)'});
+    });
+    circle2.mouseleave(function(){
+        navexp.hide();
+        $('.glyphicon-education').css({'color':'white'});
+    });
+
+
+    circle3.mouseenter(function(){
+        navwor.show();
+$('.glyphicon-globe').css({'color':'black'});
+    });
+    circle3.mouseleave(function(){
+        navwor.hide();
+$('.glyphicon-globe').css({'color':'white'});
+    });
+
+    </script>
+</div>
+     </main>

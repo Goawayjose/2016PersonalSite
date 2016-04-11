@@ -1,0 +1,547 @@
+<style>
+    .browsehappy {
+  margin: 0.2em 0;
+  background: #FFFFFD;
+  color: #000;
+
+}
+
+/* Space out content a bit */
+body {
+  padding-top: -20px;
+
+}
+
+
+
+.topBack {
+
+    overflow: hidden;
+    height: 850px;
+    background-color: #1E2340;
+    padding-bottom: 50px;
+}
+
+.topText {
+  
+    font-weight: 700;
+    z-index: 5;
+    position: absolute;
+    font-size: 50px;
+    font-weight: 500;
+    color: #e5e5e5;
+    margin-top: -850px;
+    z-index: 0;
+}
+
+#top {
+
+    margin-top: 230px;
+    height: 100%;
+    width: 100%;
+}
+
+
+#top2{
+
+    margin-top: -800px;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+
+}
+
+#top3{
+    margin-top: -800px;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    padding: 15px;
+    background-color: #1E2340;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+    color: #6BA6BF;
+    z-index: 20;
+}
+
+.jumbotron h1 {
+    color: white;
+}
+
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+.container {
+    z-index: 4;
+    overflow: hidden;
+}
+
+
+
+.stripe {
+    height: 50px;
+    width: 100%;
+    background-color: #E5678E;
+    overflow: hidden;
+    z-index: 8;
+}
+
+.backstripe {
+    height: 50px;
+    width: 100%;
+    background-color: #6BA6BF;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    margin-left: -150px;
+}
+
+.otherbackstripe {
+    height: 8px;
+    width: 100%;
+    background-color: #1E2340;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    margin-left: -125px;
+}
+
+
+
+#question {
+    padding: 15px;
+    display: block;
+    height: auto;
+    width: auto;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#question h1 {
+    color: #6BA6BF;
+}
+
+#info{
+    float: left;
+    font-size: 18px;
+    height: 60px;
+    padding: 10px;
+    border-radius:20px;
+    border-color: #1E2340;
+    background-color: transparent;
+    margin-bottom: 30px;
+}       #info:hover{
+    background-color: rgba(229, 103, 142, 0.47);
+    color: white;
+}
+#question a{
+    color: black;
+    text-decoration: none;
+}
+#info:hover{
+    text-decoration: none;
+    color: #1E2340;
+}
+
+
+.lead {
+    background-color: #6BA6BF;
+    height: 250px;
+    text-align: center;
+}
+
+#leadStripe {
+
+    height: 100px;
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    background-color: #1E2340;
+}
+
+#leadStripe2 {
+    margin-top: 110px;
+    height: 18px;
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(30, 35, 64, 0.87);
+}
+
+#leadStripe3 {
+    margin-top: 135px;
+    height: 5px;
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(30, 35, 64, 0.7);
+}
+
+#leadtext {
+    color: white;
+    z-index: 2;
+    position: absolute;
+        font-size: 30px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.lastSection {
+    height: 300px;
+    width: 100%;
+    border: 5px solid;
+    border-color: #1E2340;
+    border-radius: 10px;
+    background-color: #e5e5e5;
+
+    overflow: hidden;
+
+}
+
+        .lastSection h1 {
+             padding-left: 25px;
+            padding-right: 20px;
+            color: #E5678E;
+            z-index: 1;
+            }
+        .lastSection .row {
+            z-index: 2;
+            margin-top: -10px;
+            padding-left: 25px;
+            padding-right: 20px;
+        }
+
+        #lsStripe0 {
+              height: 100px;
+    z-index: 1;
+    width: 1200px;
+    margin-top: -200px;
+    margin-left: -15px;
+    background-color: white;
+        }
+
+    #lsStripe {
+     height: 25px;
+    z-index: 1;
+    width: 100%;
+    margin-top: 20px;
+    background-color: white;
+    }
+
+    #lsStripe2 {
+     height: 12px;
+    z-index: 1;
+    width: 100%;
+    margin-top: 15px;
+    background-color: white;
+    }
+    #lsStripe3 {
+    height: 3px;
+    z-index: 1;
+    width: 100%;
+    margin-top: 12px;
+    background-color: white;
+    }
+
+
+
+
+
+
+.row  {
+   text-align: center;
+}
+
+ .videoWrapper {
+
+        max-width: 332px;
+    }
+
+
+@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px){
+
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+
+  }
+
+    .topText {
+        font-size: 32px;
+    }
+
+    #leadtext {
+        font-size: 24px;
+    }
+
+}
+
+@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) and (orientation : portrait){
+    max-width: 730px;
+
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+
+  }
+
+    .topText {
+        font-size: 32px;
+    }
+
+    #leadtext {
+        font-size: 24px;
+    }
+}
+</style>
+
+
+<body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div ng-include="'views/NavBar.html'"></div>
+
+    <div class="topBack">
+
+
+        <img id="top" src="img/politians.png"/>
+        <img id="top2" src="img/politians2.png"/>
+        <div class="topText">"and then we told them planned parenthood was about abortions!"</div>
+        <img id="top3" src="img/politians3.png"/>
+
+    </div>
+
+        <div id="fS" class="stripe"><div class="backstripe"></div>
+      <div class="otherbackstripe"></div>
+      </div>
+        <div class="jumbotron">
+        <h1>Save Planned Parenthood!</h1>
+            <p>Click on the link below to e-mail the senators who are against Planned Parenthood. We've also created a couple paragraphs just in case you don't know what to say.<br><br>  <a class="btn btn-lg btn-primary" href="mailto:DCscheduler@lankford.senate.gov?cc= senator@mcconnell.senate.gov, mike_lee@lee.senate.gov&subject=I%20Support%20Planned%20Parenthood&body=Dear Senator,%0A%0A I am outraged by your attacks against Planned Parenthood. These institutions Provide great service to our communities. They promote absinence and safe sex, Abortions are only a minimal part of their day-to-day operations. I hope I don't have to continue to list the great services Planned Parenthood provides. As a representative of the people you should know how valuable these services are to us citizens. So please, listen to the voices of your constituency end these attacks on Planned Parenthood today.">Email them today  <span class="glyphicon glyphicon-envelope"></span></a>
+<br></p>
+
+<div id="question">
+    <div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DeilHs9kZ2g" frameborder="0" allowfullscreen></iframe>
+</div>
+
+    <a class="twitter-timeline" href="https://twitter.com/hashtag/istandwithPP" data-widget-id="646908740700999680">#istandwithPP Tweets</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+    <h1>Not convinced? </h1>
+
+<div class="btn-group"><a href="https://istandwithpp.org/facts" target="_blank">
+
+    <button id="info">Why we (and you should) support Planned Parenthood</button></a></div></div></div>
+
+
+
+<div class="stripe"><div class="backstripe"></div>
+    <div class="otherbackstripe"></div></div>
+
+<div class="lead">
+        <div id="leadStripe"></div>
+        <div id="leadStripe2"></div>
+        <div id="leadStripe3"></div>
+        <p id="leadtext">The Congress members below fail to see the important role Planned Parenthood plays in our communities. </p>
+
+    </div>
+
+
+      <div class="container">
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="http://snu.edu/Websites/snu/Images/events/1-James%20Lankford%20Official%20Portrait.jpg" alt="...">
+      <div class="caption">
+        <h3>James Lankford</h3>
+        <p>Republican senator from Oklahoma.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+    <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Mike_Lee_official_portrait_112th_Congress.jpg" alt="...">
+      <div class="caption">
+        <h3>Mike Lee</h3>
+        <p>Republican senator from Utah.</p>
+      </div>
+    </div>
+  </div>
+    <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="https://www.congress.gov/img/member/114_sr_ky_mcconnell_mitch.jpg" alt="...">
+      <div class="caption">
+        <h3>Mitch McConnel</h3>
+        <p>Republican senator from Kentucky.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+          <div class="lastSection">
+
+              <h1>Just two clicks to make your voice be heard. <br><br></h1>
+              <div class="row">
+               <a class="btn btn-lg btn-primary" href="mailto:DCscheduler@lankford.senate.gov?cc= senator@mcconnell.senate.gov, mike_lee@lee.senate.gov&subject=I%20Support%20Planned%20Parenthood&body=Dear Senator,%0A%0A I am outraged by your attacks against Planned Parenthood. These institutions Provide great service to our communities. They promote absinence and safe sex, Abortions are only a minimal part of their day-to-day operations. I hope I don't have to continue to list the great services Planned Parenthood provides. As a representative of the people you should know how valuable these services are to us citizens. So please, listen to the voices of your constituency end these attacks on Planned Parenthood today.">Email them today  <span class="glyphicon glyphicon-envelope"></span></a>
+
+          <h3>Tell these Senators you see passed their smear campaigns. Remind them of the crucial role Planned Parenthood has played in our communities. </h3>
+
+             </div>
+
+              <div id="lsStripe0"></div>
+            <div id="lsStripe"></div>
+            <div id="lsStripe2"></div>
+            <div id="lsStripe3"></div>
+          </div>
+          <h1>The following members of Congress don't have a direct e-mail address</h1>
+          <h5>Give them a call tell them how you feel about planned parenthood and congress members without direct e-mail addresses</h5>
+              <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="http://www.ernst.senate.gov/sites/default/files/Sen.%20Joni%20Ernst%20-%20Official%20Portrait.jpg" alt="...">
+      <div class="caption">
+        <h3>Joni Ernst</h3>
+        <p>Republican senator from Iowa.
+          <br>
+          <span class="glyphicon glyphicon-earphone"></span>
+            202-224-3254
+          </p>
+          <h4>"Planned Parenthood is harvesting body parts on unborn babies."</h4>
+      </div>
+    </div>
+  </div>
+              <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="http://www.cruz.senate.gov/files/images/OfficialPortrait.jpg" alt="...">
+      <div class="caption">
+        <h3>Ted Cruz</h3>
+        <p>Senator from texas.
+          <br>
+            <span class="glyphicon glyphicon-earphone"></span>
+            202-224-5922
+          </p>
+      </div>
+    </div>
+  </div>
+              <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="http://www.paul.senate.gov/imo/media/image/Paul_Rand-012611-10788-0012-ff-CFF.jpg" alt="...">
+      <div class="caption">
+        <h3>Rand Paul</h3>
+        <p>senator from kentucky.
+          <br>
+            <span class="glyphicon glyphicon-earphone"></span>202-224-4343
+          </p>
+      </div>
+    </div>
+  </div>
+
+        </div>
+
+
+
+
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+   $(window).scroll(function() {
+
+    var wScroll = $(this).scrollTop();
+
+    $('#top').css({
+      'transform' : 'translate(0px, '+ wScroll /25+'%)'
+    });
+
+    $('#top2').css({
+      'transform' : 'translate(0px, -'+ wScroll /32+'%)'
+    });
+
+  $('#topText').css({
+     'transform' : 'translate(0px, '+ wScroll /5+'%)'
+    });
+
+    $('#top3').css({
+      'transform' : 'translate(0px, -'+ wScroll /35+'%)'
+    });
+
+
+});
+    </script>
+  </body>

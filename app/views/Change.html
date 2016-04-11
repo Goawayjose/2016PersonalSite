@@ -1,0 +1,94 @@
+
+<html>
+
+<style>
+  body {
+    background-image: url(img/BackGod.png);
+    background-size: cover;
+    background-position: top;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    animation: BackAnim 6s forwards;
+  }
+
+    @keyframes BackAnim {
+      0%{
+        background-position: top;
+      }
+      100%{
+        background-position: bottom;
+      }
+    }
+
+  .david {
+    height: 700px;
+    width: 700px;
+    background-image: url(img/David.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -100%;
+    top: 0%;
+    animation: DavidAnim 6s forwards;
+  }
+
+  @keyframes DavidAnim {
+    0%{
+      top: 25%;
+      left: -100%;
+    }
+    100%{
+      top: 10%;
+      left: 0%;
+    }
+  }
+
+  .god {
+    height: 700px;
+    width: 700px;
+    background-image: url(img/God.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -60%;
+    right: -100%;
+    animation: GodAnim 6s forwards;
+  }
+
+  @keyframes GodAnim {
+    0%{
+      top: -60%;
+      right: -100%;
+    }
+    100%{
+      top: 0%;
+      right: 0%;
+    }
+  }
+
+  .BacktoUi {
+    height: 80px;
+    width: 80px;
+    border-radius:40px;
+    background-color: #FF3D7F;
+    position: fixed;
+    padding-top: 20px;
+    display: flex;
+    bottom: 10px;
+    right: 10px;
+    font-size: 25px;
+    color: white;
+    justify-content: center;
+  }
+
+</style>
+
+<body>
+  <h1>Innovate and Spark Change</h1>
+  <div class="david"></div>
+  <div class="god"></div>
+  <a href="#/Original"><div class="BacktoUi">Back</div></a>
+</body>
+
+</html>

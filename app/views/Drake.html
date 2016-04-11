@@ -1,0 +1,312 @@
+<style>
+    .body {
+        font-family: sans-serif ;
+background-color: rgb(142,130,100);
+color: rgb(39,50,69);
+}
+
+#disc {
+float: left;
+height: 400px;
+width: 400px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0e0e0e+19,7d7e7d+52,0e0e0e+91,0e0e0e+91 */
+background: #0e0e0e; /* Old browsers */
+background: -moz-linear-gradient(top,  #0e0e0e 19%, #7d7e7d 52%, #0e0e0e 91%, #0e0e0e 91%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(19%,#0e0e0e), color-stop(52%,#7d7e7d), color-stop(91%,#0e0e0e), color-stop(91%,#0e0e0e)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #0e0e0e 19%,#7d7e7d 52%,#0e0e0e 91%,#0e0e0e 91%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #0e0e0e 19%,#7d7e7d 52%,#0e0e0e 91%,#0e0e0e 91%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #0e0e0e 19%,#7d7e7d 52%,#0e0e0e 91%,#0e0e0e 91%); /* IE10+ */
+background: linear-gradient(to bottom,  #0e0e0e 19%,#7d7e7d 52%,#0e0e0e 91%,#0e0e0e 91%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e0e0e', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+
+
+
+
+margin-left: 20px;
+border-radius: 200px;
+margin-right: 25px;
+-webkit-animation-name: discTurn;
+-webkit-animation-duration: 4s;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-delay: none;
+
+-moz-animation-name: discTurn;
+-moz-animation-duration: 4s;
+-moz-animation-iteration-count: infinite;
+-moz-animation-delay: none;
+
+-ms-animation-name: discTurn;
+-ms-animation-duration: 4s;
+-ms-animation-iteration-count: infinite;
+-ms-animation-delay: none;
+
+-o-animation-name: discTurn;
+-o-animation-duration: 4s;
+-o-animation-iteration-count: infinite;
+-o-animation-delay: none;
+}
+
+@-webkit-keyframes discTurn {
+0%{-webkit-transform: rotate(0deg);}
+100%{-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes discTurn {
+0%{-moz-transform: rotate(0deg);}
+100%{-moz-transform: rotate(360deg);}
+}
+@-ms-keyframes discTurn {
+0%{-ms-transform: rotate(0deg);}
+100%{-ms-transform: rotate(360deg);}
+}
+@-o-keyframes discTurn {
+0%{-o-transform: rotate(0deg);}
+100%{-o-transform: rotate(360deg);}
+}
+
+#discCenter {
+height: 200px;
+width: 200px;
+background-color: aliceblue;
+margin-top: 100px;
+margin-left: 100px;
+border-radius: 200px;
+border-style: outset;
+border-width: thick;
+border-color: black;
+}
+
+#title h1 {
+color: rgb(185,136,48);
+}
+
+#title h3 {
+color: rgb(128,88,32);
+}
+
+.row{
+padding-top: 20px;
+padding-bottom: 20px;
+background-color: rgb(85,41,37);
+margin-left: 20px;
+margin-right: 20px;
+z-index: 30;
+position: relative;
+}
+
+.jumbo {
+min-height: 300px;
+z-index: 25;
+overflow: hidden;
+background-color: #7d7e7d;
+ min-width: 100%;
+display: inline-block;
+}
+
+.jumbo h1 {
+color:azure;
+position: relative;
+float: left;
+z-index: 30;
+}
+
+
+.drake_img {
+position: relative;
+margin-top: 15px;
+height: 250px;
+width: 440px;
+z-index: 20;
+background-image: url(img/oOTmCqq.png);
+background-size: contain;
+}
+
+
+.drake_backVery {
+
+position: absolute;
+z-index: 18;
+}
+
+.drake_back {
+
+position: absolute;
+z-index: 19;
+
+}
+
+
+.thumbnail {
+text-align: center;
+}
+
+.caption{
+margin-top: 15px;
+
+}
+
+.caption h4 {
+color: aliceblue;
+}
+
+.row .thumbnail {
+border: rgb(39,50,69) thick;
+border-radius: 30px;
+    background-color: rgb(39,50,69);
+padding-top: 40px;
+}
+
+
+.main {
+background-color: rgb(142,130,100);
+z-index: 20;
+width: auto;
+height: auto;
+position: relative;
+margin-bottom: 300px;
+}
+
+.foot {
+
+width: 100%;
+position: fixed;
+bottom: 0;
+z-index: 18;
+height: 350px;
+background-color: rgb(128,88,32);
+padding-top: 70px;
+}
+
+.contain {
+width: 100%;
+overflow: hidden;
+}
+</style>
+
+<div class="body">
+
+
+    <div class="contain">
+
+<div class="main">
+<div ng-include="'views/NavBar.html'"></div>
+
+
+<div class="row">
+<div id="disc">
+    <div id="discCenter"></div>
+    </div>
+    <div id="title" class="col-md-6">
+<h1>The evolution of a song; music never dies.</h1>
+        <p>October 8, 2015 <br> Jose Ramirez</p>
+<h3> Musicians, like all artists, use eachothers work and influence to create their own. Songs are constantly being remixed and covered by artists that are not the original creators. This type of recreation revives old work and allows them to become modern classics.</h3>
+    </div></div>
+
+
+<div class="jumbo">
+<div class="col-md-6">
+    <h1> Drake is one of today's most popular musicians. </h1>
+<br>
+        <h3 id="rightid">
+ Let's break down one of his modern Classics, Take Care, from his album 2011 of the same name.</h3>
+</div>
+ <div class="col-md-6">
+<img class="drake_backVery" src="img/culturedSpin_backGround.png">
+<img class="drake_back" src="img/culturedSpin_second.png">
+
+     <div class="drake_img"></div>
+    </div>
+
+
+    </div>
+
+
+
+<div class="row">
+<div class="col-md-6">
+<div class="thumbnail">
+  <iframe src="https://www.youtube.com/embed/N-liMXN8-Ic" frameborder="0" allowfullscreen></iframe>
+  <div class="caption">
+    <h4>
+    The original version of this song was created by Brook Brenton back in 1959. It was titled "I'll take care of you" and originally performed by Bobby Bland under Duke records.</h4>
+  </div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="thumbnail">
+  <iframe  src="https://www.youtube.com/embed/PXPN2dbgu5g" frameborder="0" allowfullscreen></iframe>
+  <div class="caption">
+    <h4>The song was recreated in 2010 by Blues musician Gil Scott Heron in his album "I am new here."</h4>
+
+  </div>
+</div>
+</div>
+
+
+    </div>
+<br>
+ <div class="row">
+
+
+    <div class="col-md-6">
+<div class="thumbnail">
+  <iframe  src="https://www.youtube.com/embed/yvpgVXEBPSA" frameborder="0" allowfullscreen></iframe>
+  <div class="caption">
+    <h4>One year later Gil Scott collaborated with DJ/Producer and member of indie band The XX; Jamie XX. They released We're new Here and the closing track was "I'll take care of you". This version of the song has Jamie's distinct calm yet upbeet style of dance music and Gil's Raspy blues vocals, both creating a unique sound unlike anything else I've personally heard before. </h4>
+  </div>
+</div>
+</div>
+
+
+
+
+    <div class=" col-md-6">
+<div class="thumbnail">
+
+<iframe  src="https://www.youtube.com/embed/-zzP29emgpg" frameborder="0" allowfullscreen></iframe>
+
+  <div class="caption">
+    <h4>
+    Which leads us to the final version of this song &#40; so far &#41; the Drake and Rhianna version. It uses the same tempo as the gil scott heron version, as well as direct samples from the Jamie XX version. Drake adds his own verses to the track along with Rhianna's majestic voice singing the classic chorus lyrics.
+</h4>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+</div>
+
+
+<div class="foot">
+<div class="col-md-2"></div>
+    <div class="col-md-8">
+<h3> Every version of this song has it's own unique style and It's interesting to see how the same messages become universal to all listeners inspite of the generational gaps.  </h3>
+        </div>
+
+    </div>
+</div>
+
+<script>
+
+    $(window).scroll(function() {
+
+var DScroll = $(this).scrollTop() / 100 % Math.PI;
+var wScroll = $(this).scrollTop();
+
+$('.drake_backVery').css({
+  'transform' : 'rotate('+DScroll+'rad)'
+});
+
+$('.drake_back').css({
+  'transform' : 'rotate(-'+DScroll+'rad)'
+});
+
+
+});
+
+</script>
+
+</div>
