@@ -1,0 +1,231 @@
+$icon-font-path: "../../../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "../bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+body{
+    background-color: #D6D2C0;
+    overflow-x: hidden;
+  }
+
+  #map {
+    margin-left: -325px;
+    height: 750px;
+    width: 650px;
+    position:relative;
+    top: 0;
+    left: 50%;
+    z-index: 0; /* Set z-index to 0 as it will be on a layer below the contact form */
+  }
+
+ #GdlTitle {
+   position: absolute;
+   margin-top: -400px;
+    top: 50%;
+    font-size: 450px;
+}
+
+#FrontPng {
+  margin-top: 2rem;
+   left: 5%;
+  background-position: top ;
+  position: absolute;
+   background-image: url(../../images/mexico/topFront.png);
+  background-size: 120%;
+  background-repeat: no-repeat;
+  min-height: 1300px;
+  height: 200%;
+  width: 120%;
+  margin-top: 80px;
+}
+
+
+  .top {
+    overflow-x: hidden;
+    position: relative;
+    margin-top: -2rem;
+    background-image: url(../../images/mexico/topBackground.png);
+    background-position: right;
+    background-size: 150%;
+    position: static;
+    min-height: 1200px;
+    height: 100%;
+    width: 100%;
+  }
+
+.row{
+    background-color: #D6D2C0;
+    float: left;
+    height: 40%;
+    margin-bottom: 0px;
+
+    position: relative;
+  }
+
+  .right {
+    float: right;
+    margin-right: 20px;
+  }
+
+  .left {
+    float: left;
+    margin-left: 20px;
+  }
+
+
+  #class a {
+    display: block;
+    position: flex;
+    padding-left: 20px;
+    margin-top: 20px !important;
+    font-size: 18px;
+    border: 2px solid;
+    color: #B38A8B;
+    &:after {
+    z-index: -1;
+    position: absolute;
+    transition: .9s;
+    content: '';
+    width: 0;
+    left: 0%;
+    top: 0px;
+    height: 40px;
+    background: #9C4849;
+  }
+    &:hover {
+    cursor: pointer;
+    transform: scale(1);
+    color: black;
+    letter-spacing: 2;
+        &:after {
+  bottom: 0;
+      width: 100%;
+      left: 0;
+    }
+
+    }
+  }
+
+
+#videoMenu {
+  margin-top: 50px;
+  right: 0;
+}
+
+#bottom {
+  padding: 5%;
+  background-color: #9C4849;
+  position: relative;
+  float: left;
+  display: inline-block;
+}
+
+#tlaq{
+  color: white;
+    float: left;
+    margin-left: 12px;
+    margin-right: 50px;
+  }
+
+  #tla{
+    color: white;
+      float: left;
+      margin-left: 12px;
+      margin-right: 50px;
+    }
+
+  h1, h2 {
+    color: #B38A8B;
+  }
+
+
+@media only screen and (max-width: 768px) {
+
+  body{
+    overflow-x: hidden;
+  }
+
+  #map {
+    margin-left: -325px;
+    height: 750px;
+    width: 650px;
+    position:relative;
+    top: 0;
+    left: 50%;
+    z-index: 0; /* Set z-index to 0 as it will be on a layer below the contact form */
+  }
+
+  #GdlTitle {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    margin-top: 20px;
+     font-size: 120px;
+ }
+
+  .top{
+    overflow-x: hidden;
+    min-height: auto;
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #FrontPng {
+    left: 0;
+    background-position: left bottom;
+    background-size: 160%;
+    min-height: 600px;
+    height: 100%;
+    width: 100%;
+    bottom: -100px;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+
+  #map {
+    margin-top: 0px;
+    margin-left: -140px;
+    height: 400px;
+    width: 300px;
+    position:relative;
+    top: 50%;
+    left: 50%;
+    z-index: 0; /* Set z-index to 0 as it will be on a layer below the contact form */
+  }
+
+  .top{
+    overflow-y: hidden;
+    width: 100%;
+    display:flex;
+    min-height: auto;
+    height: 400px;
+    background-position: bottom;
+    position: relative;
+  }
+
+  #GdlTitle {
+    position: fixed;
+    top: 5%;
+    left: 10%;
+    margin-top: 20px;
+    font-size: 62px;
+ }
+
+  #FrontPng {
+    top: 0;
+    left: 0;
+    background-position: left;
+    background-size: 160%;
+    min-height: 600px;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    position: relative;
+  }
+
+}

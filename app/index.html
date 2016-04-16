@@ -28,6 +28,8 @@
     <div ng-view=""></div>
 
 
+
+
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
@@ -38,6 +40,12 @@
        ga('create', 'UA-XXXXX-X');
        ga('send', 'pageview');
     </script>
+
+    <script  type="text/JavaScript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+         <script async defer
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYnX88RoT-ja3rt1MEESzAFkKBf9P6liE&callback=initMap">
+   </script>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -59,6 +67,11 @@
         <script src="scripts/controllers/Portfolio.js"></script>
         <script src="scripts/controllers/blog.js"></script>
         <script src="scripts/controllers/pufferFish.js"></script>
+        <script src="scripts/controllers/GDL.js"></script>
+
         <!-- endbuild -->
+
+
+
 </body>
 </html>

@@ -69,6 +69,11 @@ angular
           controller: 'blogCtrl',
           controllerAs: 'blog'
       })
+      .when('/GDL2016', {
+          templateUrl: 'views/blog/GDL2016.html',
+          controller: 'GDLCtrl',
+          controllerAs: 'GDL'
+      })
 
       .otherwise({
         redirectTo: '/'
