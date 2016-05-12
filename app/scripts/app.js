@@ -15,7 +15,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'door3.css'
   ])
   .config(function ($routeProvider) {
     $routeProvider

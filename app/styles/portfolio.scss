@@ -1,5 +1,5 @@
 body, html, main {
-    background: #f8f8f8;
+    background: #d4d4d4;
     margin: 0;
     padding-left: 0px;
             width: 100%;
@@ -9,7 +9,17 @@ body, html, main {
 
 a {
     color: black;
+  &:hover{
+    color: black;
+  }
 }
+
+h3{
+  margin-top: 0;
+  margin-bottom: 5;
+}
+
+
 
 main {
     margin: 0;
@@ -24,11 +34,7 @@ main {
     position: relative;
 }
 
-#gitIconTitle {
-    position: absolute;
-    right: 3px;
-    bottom: 3px;
-}
+
 
 .row {
     display: block;
@@ -78,6 +84,7 @@ main {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+
 }
 
 
@@ -101,7 +108,7 @@ main {
     left: 50%;
     bottom: 0;
     height: 7px;
-    background: #f7f7f7;
+    background: #d4d4d4;
   }
     &:hover {
     cursor: pointer;
@@ -177,6 +184,7 @@ box-shadow: inset 0px -10px 23px 0px rgba(23,23,23,0.6);
 }
 
 .websiteContents {
+  margin-top: 20px;
     display: flex;
     justify-content: center;
 }
@@ -192,16 +200,16 @@ box-shadow: inset 0px -10px 23px 0px rgba(23,23,23,0.6);
 }
 
 .sites {
-  position: relative;
+    position: relative;
     color: black;
     background-color: transparent;
     float: left;
-    width: 200px;
+    width: 500px;
     min-height: 400px;
     padding: 10px;
     margin: 10px;
     margin-bottom: 0px !important;
-    border: #d4d4d4 solid 1px;
+    border:black solid 1px;
 
      &:after {
     position: absolute;
@@ -209,9 +217,9 @@ box-shadow: inset 0px -10px 23px 0px rgba(23,23,23,0.6);
     content: '';
     width: 0;
     left: 50%;
-    bottom: -140;
+    bottom: 0;
     height: 7px;
-    background: #d4d4d4;
+    background: black;
   }
 
     &:nth-of-type(3){
@@ -220,7 +228,7 @@ box-shadow: inset 0px -10px 23px 0px rgba(23,23,23,0.6);
 
     &:hover {
         cursor: pointer;
-        transform: scale(1.1);
+        transform: scale(1.05);
           &:after {
 
               width: 100%;
@@ -229,6 +237,52 @@ box-shadow: inset 0px -10px 23px 0px rgba(23,23,23,0.6);
     }
 
 }
+
+.SitesMedia {
+  text-align: center;
+  margin-top: 25px;
+  position: relative;
+  color: black;
+  background-color: transparent;
+  float: left;
+  width: 500px;
+  min-height: 200px;
+  padding: 35px;
+  margin: 10px;
+  margin-bottom: 0px !important;
+  border: black solid 1px;
+
+   &:after {
+  position: absolute;
+  transition: .3s ease-in;
+  content: '';
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  height: 7px;
+  background: black;
+}
+
+  &:nth-of-type(3){
+      padding-left: 8px;
+  }
+
+  &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+        &:after {
+
+            width: 100%;
+            left: 0;
+          }
+  }
+
+}
+
+.SocialIcon{
+  font-size: 60px;
+}
+
 
 
 .SiteImg {
@@ -245,39 +299,49 @@ box-shadow: inset 0px -10px 23px 0px rgba(23,23,23,0.6);
 }#site2 {
     background: url(../img/IMG_6393.jpg);
     background-position: bottom center;
-}#site3 {
-    background: url(../img/screenshotM.png);
-    padding-left: 2px;
-}#site4 {
-    background: url(../img/screenshotD.png);
 }
 
+
+
+
+
 footer {
-    min-height: 300px;
+    min-height: 500px;
     min-width: 100%;
-    background: url(../img/DSC_0005.jpg);
-    background-position: top center;
+    background: url(../img/image3.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
 footer .Menu {
-    padding: 50px;
+    float: left;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
     background-color: rgba(212, 212, 212, 0.6);
     position: relative;
-    width: 50%;
+    width: 40%;
     min-height: 500px;
-    -webkit-box-shadow: 20px 0px 10px 0px rgba(212, 212, 212, 0.6);
--moz-box-shadow:    20px 0px 10px 0px rgba(212, 212, 212, 0.6);
-box-shadow:         20px 0px 10px 0px rgba(212, 212, 212, 0.6);
 }
 
+footer #rightSide {
+    border-top: rgba(212, 212, 212, 0.6) 500px solid;
+    border-right: transparent 60vh solid;
+    width:60%;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+  }
+
 footer p {
-    background-color: rgba(212, 212, 212, 0.6);
+    background-color: rgba(212, 212, 212, 1);
     padding: 20px;
     position: relative;
-    max-width: 75%;
+    max-width: 95%;
 }
 
 footer h6 {
@@ -288,12 +352,50 @@ footer h6 {
         background-color: transparent;
     }
 
-
-.IconRow {
-    float: left;
-    margin-right: 8px;
-    margin-left: 10px;
+.emailBlock {
+  overflow: hidden;
+  padding-top: 10px;
+  background: transparent;
+  height: 50px;
+  width: 95%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  border: black solid 1px;
+  z-index: 2;
+   &:after {
+  position: absolute;
+  transition: .5s ease-in;
+  content: '';
+  width: 0;
+  left: 110%;
+  bottom: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);;
+  z-index:-1;
+  transform: skew(35deg);
 }
+
+  &:nth-of-type(3){
+      padding-left: 8px;
+  }
+
+  &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+        &:after {
+
+            width: 150%;
+            left: -10%;
+          }
+  }
+
+}
+
+span {
+  margin-right: 8px;
+}
+
 
 
 @media only screen and (min-width: 320px) and (max-width: 767px){
@@ -333,6 +435,10 @@ footer h6 {
         width: 100%;
     }
 
+    .SitesMedia {
+      width: 100%;
+    }
+
     .websiteContents {
         display: inherit;
     }
@@ -352,6 +458,11 @@ footer h6 {
        margin-top: -80px;
        left: -10px;
     }
+
+    footer #rightSide {
+    display: none;
+      }
+
 }
 
 
@@ -422,6 +533,11 @@ footer h6 {
         margin-top: 40px;
     }
 
+    .SitesMedia {
+      width: 100%;
+      margin-top: 40px;
+    }
+
     .websiteContents {
         display: inherit;
     }
@@ -466,19 +582,19 @@ footer h6 {
     }
 
     h3 {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     h4 {
-        font-size: 35px;
+        font-size: 25px;
     }
 
     h5 {
-        font-size: 35px;
+        font-size: 25px;
     }
 
     p {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     footer h3 {
@@ -500,8 +616,8 @@ footer h6 {
     footer {
     min-height: 600px;
     min-width: 100%;
-    background: url(../img/DSC_0005.jpg);
-    background-position: right top;
+    background: url(../img/image3.png);
+    background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;

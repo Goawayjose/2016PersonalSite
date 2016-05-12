@@ -1,10 +1,5 @@
-$icon-font-path: "../../../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
-// bower:scss
-@import "../bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
-// endbower
 
-@import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
-body{
+.Gdlbody{
     background-color: #D6D2C0;
     overflow-x: hidden;
   }
@@ -26,6 +21,7 @@ body{
     font-size: 450px;
 }
 
+
 #FrontPng {
   margin-top: 2rem;
    left: 5%;
@@ -40,13 +36,12 @@ body{
   margin-top: 80px;
 }
 
-
-  .top {
+  #Gdltop {
     overflow-x: hidden;
     position: relative;
     margin-top: -2rem;
     background-image: url(../../images/mexico/topBackground.png);
-    background-position: right;
+    background-position: top;
     background-size: 150%;
     position: static;
     min-height: 1200px;
@@ -54,21 +49,20 @@ body{
     width: 100%;
   }
 
-.row{
+.Grow{
     background-color: #D6D2C0;
     float: left;
     height: 40%;
     margin-bottom: 0px;
-
     position: relative;
   }
 
-  .right {
+  .GDLright {
     float: right;
     margin-right: 20px;
   }
 
-  .left {
+  .GDLleft {
     float: left;
     margin-left: 20px;
   }
@@ -77,10 +71,10 @@ body{
   #class a {
     display: block;
     position: flex;
-    padding-left: 20px;
-    margin-top: 20px !important;
+    padding-left: 15px;
+    margin-top: 15px !important;
     font-size: 18px;
-    border: 2px solid;
+    border-top: 2px solid;
     color: #B38A8B;
     &:after {
     z-index: -1;
@@ -108,18 +102,37 @@ body{
   }
 
 
+
 #videoMenu {
   margin-top: 50px;
   right: 0;
 }
 
 #bottom {
+
   padding: 5%;
   background-color: #9C4849;
   position: relative;
   float: left;
   display: inline-block;
 }
+
+  .GDLbottomBack {
+    background-image: url(../../images/mexico/Roof.JPG);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    content: ' ';
+    top:0;
+    left: 0;
+    display: block;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+  }
+
 
 #tlaq{
   color: white;
@@ -135,14 +148,10 @@ body{
       margin-right: 50px;
     }
 
-  h1, h2 {
-    color: #B38A8B;
-  }
 
+@media only screen and (max-width: 840px) {
 
-@media only screen and (max-width: 768px) {
-
-  body{
+  .Gdlbody{
     overflow-x: hidden;
   }
 
@@ -164,10 +173,10 @@ body{
      font-size: 120px;
  }
 
-  .top{
+  #Gdltop{
     overflow-x: hidden;
     min-height: auto;
-    height: 800px;
+    height: 450px ;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -180,32 +189,39 @@ body{
     min-height: 600px;
     height: 100%;
     width: 100%;
-    bottom: -100px;
+    bottom: -0px;
   }
+
+  #tla{
+      margin-top: 10px;
+    }
 }
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
 
   #map {
     margin-top: 0px;
-    margin-left: -140px;
-    height: 400px;
-    width: 300px;
+    margin-left: -180px;
+    height: 1000px;
+    width: 370px;
     position:relative;
     top: 50%;
     left: 50%;
     z-index: 0; /* Set z-index to 0 as it will be on a layer below the contact form */
   }
 
-  .top{
+  .infoWindowContent{
+  background-color: red;
+  }
+
+  #Gdltop{
     overflow-y: hidden;
     width: 100%;
     display:flex;
     min-height: auto;
-    height: 400px;
+    height: 400px !important;
     background-position: bottom;
-    position: relative;
   }
 
   #GdlTitle {

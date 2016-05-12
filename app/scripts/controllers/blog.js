@@ -13,7 +13,11 @@ angular.module('personalSiteApp')
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
-      'Karma'
+      'Karma',
+      'jquery'
     ];
+
+ 
+
 
   });
