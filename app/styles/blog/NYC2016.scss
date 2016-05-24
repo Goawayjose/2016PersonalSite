@@ -1,0 +1,486 @@
+#NYC2016_Background {
+  background-color: black;
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  color: #FFE0C2;
+  overflow: hidden;
+}
+
+#NYC2016_Background nav {
+  position: relative;
+  color: black;
+}
+
+#introNYCPrev {
+  padding: 40px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 40;
+  background-color: #FFE0C2;
+  color: black;
+  text-align: center;
+}
+
+.NYIHide {
+  margin-top: 100%;
+  animation: yeHide 2.5s forwards;
+}
+
+@keyframes yeHide {
+  0%{
+  margin-top: 0%;
+  }
+  100%{
+    margin-top: 100%;
+  }
+}
+
+#NYIclose{
+  left: 50%;
+  margin-left: -225px;
+  margin-top: 120px;
+  position: relative;
+  display: block;
+  width: 500px;
+  height: 600px;
+  overflow: hidden;
+  &:after {
+    top: 105px;
+    background-color: black;
+    content: '';
+    width: 325px;
+    height: 70px;
+    position: absolute;
+    left: 50px;
+    transform: rotate(45deg);
+  }
+  &:before {
+    top: 105px;
+    background-color: black;
+    content: '';
+    width: 325px;
+    height: 70px;
+    position: absolute;
+    left: 50px;
+    transform: rotate(-45deg);
+  }
+  &:hover {
+    animation: CloseHop 2s forwards;
+    animation-iteration-count: infinite;
+    &:after {
+      margin-left: -70px;
+    }
+    &:before {
+      margin-left: 110px;
+    }
+  }
+}
+
+@keyframes CloseHop {
+  0%{
+transform: translateY(0px);
+  }
+  50%{
+  transform: translateY(-60px);
+  }
+  100%{
+  transform: translateY(0px);
+  }
+}
+
+#NycIPCircle {
+  height: 300px;
+  width: 300px;
+  border: 10px solid;
+  border-radius: 300px;
+  position: relative;
+  left: 50%;
+  margin-left: -150px;
+}
+
+.show {
+  display: block !important;
+}
+
+.ImgSrc {
+  height: 900px;
+  width: 900px;
+ margin-left: 50%;
+ left: -300px;
+  background-image: url(../../images/nyc/manhattan.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.DescSide {
+  float: left;
+  width: 50%;
+  height: 900px;
+  position: relative;
+  background-color: black;
+  color: #FFE0C2;
+  z-index: 9;
+  overflow: hidden;
+}
+
+.NYCPrevDesc {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  animation: DRK2LGT 2s forwards;
+  &:after {
+    top: 0;
+     z-index: 12;
+     height: 100%;
+     width: 100%;
+     background-color: black;
+     opacity: 0.5;
+     content: '';
+     position: absolute;
+   }
+}
+  @keyframes DRK2LGT {
+    0%{opacity: 0.0;}
+    100%{opacity: 1;}
+  }
+
+  .NYCPrevDesc p, .NYCPrevDesc h2 {
+    color: white;
+    z-index: 13;
+    top: 50%;
+padding-left: 25px;
+position: relative;
+  }
+
+  #NYDHome{
+background-image: url(https://i.ytimg.com/vi/QxL0cKTRDhk/maxresdefault.jpg);
+background-size: cover;
+background-position: right;
+display: none;
+}
+
+#NYDFest{
+background-image: url(http://www.boweryboogie.com/content/uploads/2014/06/govball-8.jpg);
+background-size: cover;
+background-position: center;
+display: none;
+}
+
+#NYDTimesSquare{
+background-image: url(http://spoilednyc.com/wp-content/uploads///2015/10/13/timessquare1995-2843.jpg);
+background-size: cover;
+background-position: center;
+display: none;
+}
+
+#NYDRockerfeller{
+background-image: url(http://vigilantcitizen.com/wp-content/uploads/2011/01/atlasrocke.jpg);
+background-size: cover;
+background-position: center;
+display: none;
+}
+
+#NYDRadioCity{
+background-image: url(http://www.fuse.tv/image/525ff23f7a31bbff14000020/700/467/eminem-impersonators-at-2000-vmas.jpg);
+background-size: cover;
+background-position: top;
+display: none;
+}
+
+#NYDMOMA{
+background-image: url(http://www.midtownhotelnyc.com/resourcefiles/mainimages/new-york-city-museum-of-modern-art-top.jpg);
+background-size: cover;
+background-position: center;
+display: none;
+}
+
+#NYDStP{
+background-image: url(http://bigapplevisitorscenter.com/wp-content/uploads/2013/01/St_Patricks_cathedral_NY.jpg);
+background-size: cover;
+background-position: center;
+display: none;
+}
+
+#NYDUN{
+background-image: url(http://cdn.history.com/sites/2/2013/12/fidel-castro-address-united-nations.jpg);
+background-size: cover;
+background-position: center;
+display: none;
+}
+
+#NYDGrandCentralTerminal{
+background-image: url(http://msnbcmedia.msn.com/i/MSNBC/Components/Slideshows/_production/ss-130131-grand-central-terminal/ss-130131-grand-central-terminal-tease.jpg);
+background-size: cover;
+background-position: center;
+display: none;
+}
+
+#NYDChrysler{
+background-image: url(https://store-media.nytimes.com/store/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/n/s/nsapmi38_extr.jpg);
+background-size: cover;
+background-position: center;
+display: none;
+}
+
+#NYDEmpire{
+background-image: url(http://i2.cdn.turner.com/cnnnext/dam/assets/130802044459-skyscrapers-gallery---empire-state-building-exlarge-169.jpg);
+background-size: cover;
+background-position: center;
+display: none;
+}
+
+#NYDMSG{
+background-image: url(http://miriadna.com/desctopwalls/images/max/Madison-Square-Garden.jpg);
+background-size: cover;
+background-position: center;
+display: none;
+}
+
+#NYDHighLine{
+background-image: url(http://4.bp.blogspot.com/-xu5NL5mxyfk/UfeasyxUISI/AAAAAAAAcS8/y1un3J0H7z8/s1600/DSC_0343.JPG);
+background-size: cover;
+background-position: center;
+display: none;
+}
+
+#NYDSOHO{
+background-image: url(http://www.etraveltrips.com/wp-content/uploads/2011/07/NYC_Soho_07252011.jpg);
+background-size: cover;
+background-position: center;
+display: none;
+}
+
+#NYDLittleItaly{
+background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/01/04/1f/7e/little-italy-nyc-5.jpg);
+background-size: cover;
+background-position: center;
+display: none;
+}
+
+#NYD911{
+background-image: url(http://ngm.nationalgeographic.com/2011/09/remembering-9-11/ground-zero-today.jpg);
+background-size: cover;
+background-position: center;
+display: none;
+}
+
+#NYDStockExchange {
+background-image: url(http://www.offshoreenergytoday.com/wp-content/uploads/2015/12/NYSE-suspends-trading-Paragon-Offshore-shares.jpg);
+background-size: cover;
+background-position: center;
+display: none;
+}
+
+#NYDBull {
+background-image: url(https://c1.staticflickr.com/9/8794/17086570218_70271813b1_b.jpg);
+background-size: cover;
+background-position: center;
+display: none;
+}
+
+#NYDMBridge {
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/64/Manhattan_Bridge_2007.jpg);
+background-size: cover;
+background-position: center;
+display: none;
+}
+
+#NYDBrooklynBridge {
+background-image: url(http://www.bandofbridges.com/wp-content/uploads/2015/10/brooklyn-bridge-at-sunrise.jpg);
+background-size: cover;
+background-position: center;
+display: none;
+}
+
+#NYDFlatiron {
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/7b/NYC_-_Flatiron_building_-_Top_detail.jpg);
+background-size: cover;
+background-position: center;
+display: none;
+}
+
+#NYDJlennon {
+background-image: url(http://s3.amazonaws.com/media.wbur.org/wordpress/16/files/2012/12/1206_Imagine.jpg);
+background-size: cover;
+background-position: center;
+display: none;
+}
+
+#NYDGuggenheim {
+background-image: url(https://pbs.twimg.com/media/Chd2uTgUUAAo5jH.jpg);
+background-size: cover;
+background-position: center;
+display: none;
+}
+
+#NYDFerry {
+background-image: url(http://www.vosizneias.com/wp-content/uploads/2011/02/ferry.jpg);
+background-size: cover;
+background-position: center;
+display: none;
+}
+
+#NYDLiberty {
+background-image: url(https://www.statueoflibertytickets.com/images/lede-nav/statue-of-liberty.jpg);
+background-size: cover;
+background-position: center;
+display: none;
+}
+
+#NYDArc {
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/ce/Arc_de_Triomphe_du_Carrousel_1890-1900.jpg);
+background-size: cover;
+background-position: center;
+display: none;
+}
+
+.NYCId {
+  height: 10px;
+  width: 10px;
+  background-color: red;
+  position: relative;
+  &:hover {
+    transform: scale(1.5);
+  }
+}
+
+#NYCHome {
+  left: 620px;
+  top: 340px;
+}
+
+#NYCFest {
+  display: block;
+  height: 15px;
+width: 50px;
+  background-color: red;
+  position: relative;
+  left: 570px;
+  top: 200px;
+  &:hover {
+    transform: scale(1.5);
+  }
+}
+
+#NYCTimesSquare {
+  left: 445px;
+  top: 467px;
+}
+
+#NYCRockerfeller {
+  left: 465px;
+  top: 443px;
+}
+
+#NYCRadioCity {
+  left: 445px;
+  top: 425px;
+}
+
+#NYCMOMA {
+  left: 465px;
+  top: 409px;
+}
+
+#NYCStP {
+  left: 479px;
+    top: 413px;
+}
+
+#NYCUN {
+  left: 524px;
+    top: 428px;
+}
+
+#NYCGrandCentralTerminal {
+  left: 490px;
+    top: 418px;
+}
+
+#NYCChrysler {
+  left: 509px;
+    top: 408px;
+}
+
+#NYCEmpire{
+  left: 480px;
+    top: 445px;
+}
+
+#NYCMSG{
+  left: 440px;
+    top: 445px;
+}
+
+#NYCHighLine{
+  left: 395px;
+    top: 445px;
+}
+
+#NYCSOHO {
+  left: 460px;
+    top: 530px;
+}
+
+#NYCLittleItaly {
+  left: 500px;
+    top: 560px;
+}
+
+#NYC911 {
+  left: 455px;
+    top: 610px;
+}
+
+#NYCBull {
+  left: 475px;
+    top: 630px;
+}
+
+#NYCStockExchange {
+  left: 480px;
+    top: 620px;
+}
+
+#NYCMBridge {
+  left: 535px;
+    top: 555px;
+}
+
+#NYCBrooklynBridge {
+  left: 520px;
+    top: 570px;
+}
+
+#NYCFlatiron {
+    left: 480px;
+    top: 395px;
+}
+
+#NYCJlennon {
+    left: 445px;
+    top: 175px;
+}
+
+#NYCGuggenheim {
+  left: 475px;
+  top: 108px;
+}
+
+#NYCFerry {
+  left: 524px;
+    top: 318px;
+}
+
+#NYCLiberty {
+  left: 465px;
+  top: 575px;
+}
+
+#NYCArc {
+  left: 465px;
+  top: 390px;
+}

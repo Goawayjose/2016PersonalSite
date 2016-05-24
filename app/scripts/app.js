@@ -75,6 +75,13 @@ angular
           controller: 'GDLCtrl',
           controllerAs: 'GDL'
       })
+      .when('/NYC2016', {
+          templateUrl: 'views/blog/NYC2016.html',
+          controller: 'NYCCtrl',
+          controllerAs: 'NYC'
+      })
+
+
 
       .otherwise({
         redirectTo: '/'
