@@ -1,10 +1,11 @@
 #NYC2016_Background {
-  background-color: black;
+  background-color: #FFE0C2;
   min-height: 100%;
   width: 100%;
   position: absolute;
-  color: #FFE0C2;
+  color: black;
   overflow: hidden;
+  font-family: times;
 }
 
 #NYC2016_Background nav {
@@ -98,17 +99,39 @@ transform: translateY(0px);
   position: relative;
   left: 50%;
   margin-left: -150px;
+  overflow: hidden;
+
+}
+
+
+#NYCPIImg {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  background-image: url(../../images/nyc/me1.png);
+  background-position: center;
+  background-size: contain;
 }
 
 .show {
   display: block !important;
 }
 
+.containMap  {
+  width: 96%;
+height: 900px;
+position: relative;
+display: block;
+margin: 50px;
+border: black 6px solid;
+overflow: hidden;
+}
+
 .ImgSrc {
+   float: left;
   height: 900px;
   width: 900px;
- margin-left: 50%;
- left: -300px;
+  left: -300px;
   background-image: url(../../images/nyc/manhattan.svg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -116,26 +139,28 @@ transform: translateY(0px);
 }
 
 .DescSide {
-  float: left;
-  width: 50%;
-  height: 900px;
-  position: relative;
-  background-color: black;
-  color: #FFE0C2;
-  z-index: 9;
-  overflow: hidden;
+  width: 60%;
+      height: 800px;
+      position: absolute;
+      background-color: transparent;
+      border: 5px solid black;
+      color: #FFE0C2;
+      z-index: 9;
+      overflow: hidden;
+      top: 50px;
+      right: 25px;
 }
 
 .NYCPrevDesc {
   position: absolute;
-  height: 100%;
-  width: 100%;
+      height: 100%;
+      width: 100%;
   animation: DRK2LGT 2s forwards;
   &:after {
-    top: 0;
+    bottom: 0;
      z-index: 12;
-     height: 100%;
-     width: 100%;
+     height: 60%;
+     width:  100%;
      background-color: black;
      opacity: 0.5;
      content: '';
@@ -143,8 +168,8 @@ transform: translateY(0px);
    }
 }
   @keyframes DRK2LGT {
-    0%{opacity: 0.0;}
-    100%{opacity: 1;}
+    0%{margin-left: -1200px;}
+    100%{margin-left: 0px;}
   }
 
   .NYCPrevDesc p, .NYCPrevDesc h2 {
@@ -153,6 +178,8 @@ transform: translateY(0px);
     top: 50%;
 padding-left: 25px;
 position: relative;
+border-bottom: 2px solid white;
+  animation: DRK2LGT 2.25s forwards;
   }
 
   #NYDHome{
@@ -331,33 +358,53 @@ display: none;
 }
 
 #NYDArc {
-background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/ce/Arc_de_Triomphe_du_Carrousel_1890-1900.jpg);
+background-image: url(https://photos.smugmug.com/Portfolio/New-York/i-dVz8Kdr/0/L/new-york-washington-square-arch-1-L.jpg);
 background-size: cover;
 background-position: center;
 display: none;
 }
 
-.NYCId {
-  height: 10px;
-  width: 10px;
-  background-color: red;
+#nyPageMain {
   position: relative;
+  display: block;
+}
+
+#NYTit {
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 5px solid;
+  text-align: center;
+  color:black;
+  width: 100%;
+  height: auto;
+  position: inherit;
+  margin-top: 15px;
+  float: left;
+  font-size: 70px;
+}
+
+.NYCId {
+  height: 17px;
+  width: 17px;
+  background-color: #26273B;
+  position: absolute;
+  border-radius: 10px;
+  border: 1px solid #65687F;
   &:hover {
-    transform: scale(1.5);
+    transform: scale(3);
   }
 }
 
 #NYCHome {
   left: 620px;
-  top: 340px;
+  top: 335px;
 }
 
 #NYCFest {
   display: block;
-  height: 15px;
-width: 50px;
-  background-color: red;
-  position: relative;
+  height: 20px;
+width: 20px;
+  position: absolute;
   left: 570px;
   top: 200px;
   &:hover {
@@ -366,121 +413,207 @@ width: 50px;
 }
 
 #NYCTimesSquare {
-  left: 445px;
-  top: 467px;
+  left: 440px;
+  top: 487px;
 }
 
 #NYCRockerfeller {
   left: 465px;
-  top: 443px;
+  top: 473px;
 }
 
 #NYCRadioCity {
   left: 445px;
-  top: 425px;
+  top: 465px;
 }
 
 #NYCMOMA {
   left: 465px;
-  top: 409px;
+  top: 455px;
 }
 
 #NYCStP {
   left: 479px;
-    top: 413px;
+    top: 463px;
 }
 
 #NYCUN {
   left: 524px;
-    top: 428px;
+    top: 499px;
 }
 
 #NYCGrandCentralTerminal {
   left: 490px;
-    top: 418px;
+    top: 499px;
 }
 
 #NYCChrysler {
-  left: 509px;
-    top: 408px;
+  left: 506px;
+    top: 499px;
 }
 
 #NYCEmpire{
-  left: 480px;
-    top: 445px;
+  left: 460px;
+    top: 540px;
 }
 
 #NYCMSG{
-  left: 440px;
-    top: 445px;
+  left: 435px;
+    top: 545px;
 }
 
 #NYCHighLine{
   left: 395px;
-    top: 445px;
+    top: 560px;
 }
 
 #NYCSOHO {
   left: 460px;
-    top: 530px;
+    top: 680px;
 }
 
 #NYCLittleItaly {
-  left: 500px;
-    top: 560px;
+  left: 485px;
+    top: 700px;
 }
 
 #NYC911 {
   left: 455px;
-    top: 610px;
+    top: 760px;
 }
 
 #NYCBull {
-  left: 475px;
-    top: 630px;
+  left: 470px;
+    top: 800px;
 }
 
 #NYCStockExchange {
-  left: 480px;
-    top: 620px;
+  left: 475px;
+    top: 780px;
 }
 
 #NYCMBridge {
   left: 535px;
-    top: 555px;
+    top: 740px;
 }
 
 #NYCBrooklynBridge {
   left: 520px;
-    top: 570px;
-}
+    top: 764px;
+  }
 
 #NYCFlatiron {
-    left: 480px;
-    top: 395px;
+    left: 470px;
+  top: 575px;
 }
 
 #NYCJlennon {
-    left: 445px;
-    top: 175px;
+    left: 440px;
+    top: 385px;
 }
 
 #NYCGuggenheim {
   left: 475px;
-  top: 108px;
+  top: 328px;
 }
 
 #NYCFerry {
   left: 524px;
-    top: 318px;
+    top: 540px;
 }
 
 #NYCLiberty {
   left: 465px;
-  top: 575px;
+  top: 820px;
 }
 
 #NYCArc {
   left: 465px;
-  top: 390px;
+  top: 610px;
+}
+
+
+@media only screen and (max-width: 500px) {
+  #introNYCPrev {
+    padding-top: 20px;
+  }
+
+  #introNYCPrev h1 {
+    font-size: 36px;
+  }
+
+  #NYIclose {
+    margin-top: 5px;
+    margin-left: -210px;
+  }
+
+  .NYIHide {
+    display: none;
+  }
+
+  .containMap {
+    margin: 0px;
+    margin-left: 6px;
+  }
+
+  #NYTit {
+    font-size: 30px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .DescSide {
+    z-index: 10;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    height: 180px;
+    width: 100%;
+    border: transparent;
+    background-color: rgba(0,0,0, 0.8);
+  }
+  .NYCPrevDesc {
+      &:after {
+    height: 100%;
+    }
+  }
+
+  .NYCPrevDesc p, .NYCPrevDesc h2 {
+    top: 20%;
+  }
+  .NYCPrevDesc h2 {
+    font-size: 34px;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .NYIHide {
+    margin-top: 300%;
+  }
+
+  @keyframes yeHide {
+    0%{
+    margin-top: 0%;
+    }
+    100%{
+      margin-top: 300%;
+    }
+  }
+
+  .containMap {
+    margin: 0px;
+    width: 100%;
+  }
+
+  .DescSide {
+    z-index: 10;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    height: 180px;
+    width: 100%;
+    background-color: rgba(0,0,0, 0.8);
+  }
+
 }
