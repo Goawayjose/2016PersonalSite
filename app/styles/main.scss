@@ -268,7 +268,33 @@ a:hover {
     .Whole_Top{
       height: 30%;
     }
+
     .Whole_bottom{
       height: 30%;
+
+      &:after {
+      position: absolute;
+      transition: 0s;
+      content: '';
     }
+
+      &:hover {
+      cursor: pointer;
+      transform: scale(0);
+      letter-spacing: 1px;
+
+          &:after {
+            width: 0;
+            left: 50%;
+      }
+
+    }
+}
+}
+
+@media all and (max-width: 500px) {
+  .Whole_Top,
+  .Whole_Bottom {
+    height:200px;
+  }
 }

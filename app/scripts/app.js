@@ -50,11 +50,6 @@ angular
         controller: 'blogCtrl',
         controllerAs: 'blog'
       })
-      .when('/PufferFish', {
-        templateUrl: 'views/PufferFish.html',
-        controller: 'blogCtrl',
-        controllerAs: 'blog'
-      })
       .when('/MarvinGaye', {
         templateUrl: 'views/MarvinGaye.html',
         controller: 'blogCtrl',
@@ -78,6 +73,11 @@ angular
       .when('/NYC2016', {
           templateUrl: 'views/blog/NYC2016.html',
           controller: 'NYCCtrl',
+          controllerAs: 'NYC'
+      })
+
+      .when('/NYC2016_after', {
+          templateUrl: 'views/blog/NYCAfter.html',
           controllerAs: 'NYC'
       })
 

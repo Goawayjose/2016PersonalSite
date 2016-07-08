@@ -123,7 +123,7 @@ nav li {
 }
 
 .captionBlog {
-
+  max-width: 18%;
   margin-top: 50px;
   margin-left: 25px;
   top: 0;
@@ -144,6 +144,10 @@ nav li {
 
 //iphones
 @media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px){
+  .captionBlog {
+    max-width: 100%;
+  }
+
     .blogHeader {
         margin-top: 0px;
     }
@@ -162,7 +166,8 @@ nav li {
     }
 
     .BlogTemp{
-
+      position: relative;
+      display: block;
         &:after {
         position: absolute;
         transition: .2s;

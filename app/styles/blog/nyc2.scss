@@ -1,0 +1,569 @@
+
+
+
+.WonderCover {
+  display: none;
+  top: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  background-color: rgba(101, 104, 127, 0.9);
+  transform: skewY(-10deg);
+  overflow: hidden;
+  animation: WonderMove 2s forwards;
+  &:before {
+    content: '';
+    background: #26273B;
+    height: 30px;
+    width: 130%;
+    position: absolute;
+    top:0;
+    left: 0;
+  }
+  &:after {
+    content: '';
+    background: #26273B;
+    height: 30px;
+    width: 130%;
+    position: absolute;
+    bottom:0;
+    left: 0;
+  }
+}
+
+@keyframes WonderMove {
+  0%{
+  transform: translateY(100%);
+  opacity: 0;
+  }
+  50%{
+  transform: skewY(0deg);
+  opacity: 1;
+  }
+  90%{
+  transform: translateY(0);
+  transform: skewY(-10deg);
+  }
+}
+
+#WonderText {
+  transform: skewY(10deg);
+  margin-top: 190px;
+}
+
+
+section h2 {
+  font-family: helvetica
+}
+
+video.bgvid {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: black;
+    background-size: cover;
+}
+
+
+
+section.NycImgAfter {
+  height: 100vh;
+  width: 100%;
+  background: transparent;
+  position: relative;
+  &:before {
+    content: '';
+    height: 450px;
+    width: 100vw;
+    background-color: blue;
+    position: absolute;
+    top: 0px;
+    transform: skewy(-10deg);
+  }
+  &:after{
+    content: '';
+    height: 450px;
+    width: 100vw;
+    background-color: green;
+    position: absolute;
+    bottom: -431px;
+    transform: skewy(10deg);
+      z-index: 3;
+  }
+  &:nth-child(2) {
+    background: url(../../images/newYork/IMG_2421.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+    &:after {
+      background: url(../../images/newYork/IMG_2447.jpg) fixed;
+      background-position:left;
+      background-size: cover;
+      z-index: 3;
+    }
+    &:before{
+      background: url(../../images/newYork/IMG_2430.jpg) fixed;
+      background-position: bottom;
+      background-size: cover;
+    }
+  }
+  &:nth-child(3) {
+    background: url(../../images/newYork/IMG_2438.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+    &:after {
+      background: url(../../images/newYork/IMG_2431.jpg) fixed;
+      background-position:left;
+      background-size: cover;
+    }
+    &:before{
+      background: url(../../images/newYork/IMG_2429.jpg) fixed;
+      background-position: top;
+      background-size: cover;
+    }
+  }
+  &:nth-child(4) {
+    background: url(../../images/newYork/IMG_2435.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+    &:after {
+      background: url(../../images/newYork/IMG_2471.jpg) fixed;
+      background-position:left;
+      background-size: cover;
+    }
+    &:before{
+      background: url(../../images/newYork/IMG_2450.jpg) fixed;
+      background-position: top;
+      background-size: cover;
+    }
+  }
+  &:nth-child(5) {
+    background: url(../../images/newYork/IMG_2482.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+    &:after {
+      background: url(../../images/newYork/IMG_2490.jpg) fixed;
+      background-position:top;
+      background-size: cover;
+    }
+    &:before{
+      background: url(../../images/newYork/IMG_2476.jpg) fixed;
+      background-position: top;
+      background-size: cover;
+    }
+  }
+  &:nth-child(6) {
+    background: url(../../images/newYork/IMG_2497.jpg) fixed;
+    background-position: bottom;
+    background-size: cover;
+    &:after {
+      background: url(../../images/newYork/IMG_2495.jpg) fixed;
+      background-position:top;
+      background-size: cover;
+    }
+    &:before{
+      background: url(../../images/newYork/IMG_2496.jpg) fixed;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  &:nth-child(7) {
+    background: url(../../images/newYork/IMG_2501.jpg) fixed;
+    background-position: bottom;
+    background-size: cover;
+    &:after {
+      background: url(../../images/newYork/IMG_2502.jpg) fixed;
+      background-position: center;
+      background-size: cover;
+    }
+    &:before{
+      background: url(../../images/newYork/IMG_2499.jpg) fixed;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  &:nth-child(8) {
+    background: url(../../images/newYork/IMG_2506.jpg) fixed;
+    background-position: top;
+    background-size: cover;
+    &:after {
+      background: url(../../images/newYork/IMG_2505.jpg) fixed;
+      background-position: center;
+      background-size: cover;
+    }
+    &:before{
+      background: url(../../images/newYork/IMG_2508.jpg) fixed;
+      background-position: top;
+      background-size: cover;
+    }
+  }
+  &:nth-child(9) {
+    background: url(../../images/newYork/IMG_2510.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+    &:after {
+      background: url(../../images/newYork/IMG_2509.jpg) fixed;
+      background-position: bottom;
+      background-size: cover;
+    }
+    &:before{
+      background: url(../../images/newYork/IMG_2511.jpg) fixed;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  &:nth-child(10) {
+    background: url(../../images/newYork/IMG_2513.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+    &:after {
+      background: url(../../images/newYork/IMG_2512.jpg) fixed;
+      background-position: top;
+      background-size: cover;
+    }
+    &:before{
+      background: url(../../images/newYork/IMG_2516.jpg) fixed;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  &:nth-child(11) {
+    background: transparent fixed;
+    background-position: center;
+    background-size: cover;
+    &:after {
+      background: url(../../images/newYork/IMG_2520.jpg) fixed;
+      background-position: bottom;
+      background-size: cover;
+    }
+    &:before{
+      background: url(../../images/newYork/IMG_2519.jpg) fixed;
+      background-position: bottom;
+      background-size: cover;
+    }
+  }
+  &:nth-child(12) {
+    background: url(../../images/newYork/IMG_2537.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+    &:after {
+      background: url(../../images/newYork/IMG_2544.jpg) fixed;
+      background-position: top;
+      background-size: cover;
+    }
+    &:before{
+      background: url(../../images/newYork/IMG_2529.jpg) fixed;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  &:nth-child(13) {
+    background: url(../../images/newYork/IMG_2550.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+    &:after {
+      background: url(../../images/newYork/IMG_2555.jpg) fixed;
+      background-position: center;
+      background-size: cover;
+    }
+    &:before{
+      background: url(../../images/newYork/IMG_2539.jpg) fixed;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  &:nth-child(14) {
+    background: url(../../images/newYork/IMG_2561.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+    &:after {
+      background: url(../../images/newYork/IMG_2557.jpg) fixed;
+      background-position: center;
+      background-size: cover;
+    }
+    &:before{
+      background: url(../../images/newYork/IMG_2558.jpg) fixed;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  &:nth-child(15) {
+    background: url(../../images/newYork/IMG_2566.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+    &:after {
+      background: url(../../images/newYork/IMG_2567.jpg) fixed;
+      background-position: top;
+      background-size: cover;
+    }
+    &:before{
+      background: url(../../images/newYork/IMG_2567.jpg) fixed;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  &:nth-child(16) {
+    background: url(../../images/newYork/IMG_2578.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+    &:after {
+      background: url(../../images/newYork/IMG_2574.jpg) fixed;
+      background-position: center;
+      background-size: cover;
+    }
+    &:before{
+      background: url(../../images/newYork/IMG_2569.jpg) fixed;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  &:nth-child(17) {
+    background: url(../../images/newYork/IMG_2582.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+    &:after {
+      background: url(../../images/newYork/IMG_2585.jpg) fixed;
+      background-position: center;
+      background-size: cover;
+    }
+    &:before{
+      background: url(../../images/newYork/IMG_2581.jpg) fixed;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  &:nth-child(18) {
+    background: url(../../images/newYork/IMG_2588.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+    &:after {
+      background: url(../../images/newYork/IMG_2589.jpg) fixed;
+      background-position: center;
+      background-size: cover;
+    }
+    &:before{
+      background: url(../../images/newYork/IMG_2587.jpg) fixed;
+      background-position: top;
+      background-size: cover;
+    }
+  }
+  &:nth-child(19) {
+    background: transparent;
+    &:after {
+      background: transparent;
+    }
+    &:before{
+      background: url(../../images/newYork/IMG_2595.jpg) fixed;
+      background-position: bottom;
+      background-size: cover;
+    }
+  }
+  &:nth-child(20) {
+    background: url(../../images/newYork/IMG_2603.jpg) fixed;
+    background-position: bottom;
+    background-size: cover;
+    &:after {
+      background: url(../../images/newYork/IMG_2605.jpg) fixed;
+      background-position: center;
+      background-size: cover;
+    }
+    &:before{
+      background: transparent;
+    }
+  }
+  &:nth-child(21) {
+    background: url(../../images/newYork/IMG_2610.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+    &:after {
+      background: url(../../images/newYork/IMG_2611.jpg) fixed;
+      background-position: center;
+      background-size: cover;
+    }
+    &:before{
+      background: url(../../images/newYork/IMG_2606.jpg) fixed;
+      background-position: top;
+      background-size: cover;
+    }
+  }
+  &:nth-child(22) {
+    background: url(../../images/newYork/IMG_2613.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+    &:after {
+      background: url(../../images/newYork/IMG_2612.jpg) fixed;
+      background-position: top;
+      background-size: cover;
+    }
+    &:before{
+      background: url(../../images/newYork/IMG_2615.jpg) fixed;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  &:nth-child(23) {
+    background: url(../../images/newYork/IMG_2629.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+    &:after {
+      background: url(../../images/newYork/IMG_2623.jpg) fixed;
+      background-position: top;
+      background-size: cover;
+    }
+    &:before{
+      background: url(../../images/newYork/IMG_2619.jpg) fixed;
+        background-position: 127px -277px;
+      background-size: cover;
+    }
+  }
+  &:nth-child(24) {
+    background: url(../../images/newYork/IMG_2635.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+    &:after {
+      background: url(../../images/newYork/IMG_2642.jpg) fixed;
+      background-position: center;
+      background-size: cover;
+    }
+    &:before{
+      background: url(../../images/newYork/IMG_2625.jpg) fixed;
+        background-position: center;
+      background-size: cover;
+    }
+  }
+  &:nth-child(25) {
+    background: url(../../images/newYork/IMG_2645.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+    &:after {
+      background: url(../../images/newYork/IMG_2644.jpg) fixed;
+      background-position: center right;
+      background-size: cover;
+    }
+    &:before{
+      background: url(../../images/newYork/IMG_2637.jpg) fixed;
+        background-position: center;
+      background-size: cover;
+    }
+  }
+  &:nth-child(26) {
+    background: url(../../images/newYork/IMG_2649.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+    &:after {
+      background: url(../../images/newYork/IMG_2662.jpg) fixed;
+      background-position: center right;
+      background-size: cover;
+    }
+    &:before{
+      background: url(../../images/newYork/IMG_2648.jpg) fixed;
+        background-position: top;
+      background-size: cover;
+    }
+  }
+  &:nth-child(27) {
+    background: url(../../images/newYork/IMG_2666.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+    &:after {
+      background: url(../../images/newYork/IMG_2664.jpg) fixed;
+      background-position: center ;
+      background-size: cover;
+    }
+    &:before{
+      background: url(../../images/newYork/IMG_2655.jpg) fixed;
+        background-position: center;
+      background-size: cover;
+    }
+  }
+  &:nth-child(28) {
+    background: url(../../images/newYork/IMG_2674.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+    &:after {
+      background: url(../../images/newYork/IMG_2668.jpg) fixed;
+      background-position: center ;
+      background-size: cover;
+    }
+    &:before{
+      background: url(../../images/newYork/IMG_2667.jpg) fixed;
+        background-position: center;
+      background-size: cover;
+    }
+  }
+  &:nth-child(29) {
+    background: url(../../images/newYork/IMG_2677.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+    &:after {
+      background: url(../../images/newYork/IMG_2676.jpg) fixed;
+      background-position: center ;
+      background-size: cover;
+    }
+    &:before{
+      background: url(../../images/newYork/IMG_2701.jpg) fixed;
+        background-position: center;
+      background-size: cover;
+    }
+  }
+  &:nth-child(30) {
+    background: url(../../images/newYork/IMG_2689.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+    &:after {
+      background: url(../../images/newYork/IMG_2683.jpg) fixed;
+      background-position: center ;
+      background-size: cover;
+      transform: skewy(0deg);
+    }
+    &:before{
+      background: url(../../images/newYork/IMG_2685.jpg) fixed;
+        background-position: center;
+      background-size: cover;
+    }
+  }
+
+
+}
+
+#NYCAfterFooter {
+  text-align: center;
+  padding:200px;
+  padding-top: 300px;
+  margin-top: 200px;
+  position: absolute;
+  background-color: #65687F;
+  color: white;
+  z-index: 0;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+#nycFootImg {
+    background: url(../../images/newYork/IMG_2700.jpg) ;
+    height: 400px;
+    width:600px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 0 auto;
+}
+
+#NYCAfterFooter a  {
+  color: white;
+  padding-top: 40px;
+  margin-left: -50px;
+  z-index: 5;
+  position: absolute;
+  left: 50%;
+  height: 100px;
+  width: 100px;
+  border: 1px solid white;
+}

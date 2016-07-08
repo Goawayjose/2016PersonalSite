@@ -398,7 +398,7 @@ span {
 
 
 
-@media only screen and (min-width: 320px) and (max-width: 767px){
+@media all and (min-width: 320px) and (max-width: 767px){
     body {
     position: absolute;
     display: inline-table;
@@ -469,7 +469,7 @@ span {
 @media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px){
 
     h1 {
-        font-size: 35px;
+        font-size: 36px;
     }
 
     h3 {
@@ -578,7 +578,7 @@ span {
     }
 
     h1 {
-        font-size: 55px;
+        font-size: 36px;
     }
 
     h3 {

@@ -1,0 +1,175 @@
+<style>
+
+.logo{
+  left: 50%;
+  margin-left: -250px;
+  font-size: 250px;
+  display: block;
+  height: 500px;
+  width: 500px;
+  background: transparent;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.HrtContainer{
+  top: 40px;
+      left: 185px;
+      Height: 260px;
+      width: 260px;
+      position: absolute;
+}
+
+.HeartCircleRight{
+  height: 120px;
+  width: 120px;
+  background: red;
+  border-radius: 80px;
+  position: absolute;
+  top:21px;
+  left: 112px;
+}
+
+.HeartCircleLeft{
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  background: red;
+  border-radius: 80px;
+  top:22px;
+  left: 24px;
+}
+
+.Heartsquare {
+  position: absolute;
+  height: 100px;
+  width: 125px;
+  background: red;
+  top: 80px;
+  left: 56px;
+  transform: rotate(45deg);
+}
+
+.Heartsquare2 {
+  position: absolute;
+  height: 100px;
+  width: 125px;
+  background: red;
+  top: 80px;
+  left: 75px;
+  transform: rotate(-45deg);
+}
+
+#i {
+  left: 75px;
+  top: -20px;
+  position: absolute;
+}
+
+
+#ny {
+  left: 60px;
+  top: 200px;
+  position: absolute;
+}
+
+@media all and (max-width: 500px) {
+  .logo{
+
+  }
+}
+
+</style>
+
+
+
+<section class="NycImgAfter">
+
+<br><br><br>
+    <div class="logo col">
+
+        <h1>New York City | June 2016</h1>
+        <br><br>
+    <div id="i">I</div>
+
+  <div class="HrtContainer">
+
+
+
+  <div class="HeartCircleLeft"></div>
+    <div class="HeartCircleRight"></div>
+    <div class="Heartsquare"></div>
+    <div class="Heartsquare2"></div>
+    </div>
+    <div id="ny"> NY
+<h1 id="Wonder"><span class="glyphicon glyphicon-question-sign"></span></h1>
+    </div>
+    <div class="WonderCover">
+      <div id="WonderText">
+        <h1>Our Trip to New York City</h1>
+        <h6>Scroll through this page to get snap shots of our adventure in the Big Apple.</h6>
+        <h1 id="wonderClose"><span class="glyphicon glyphicon-remove-sign"></span></h1>
+      </div>
+    </div>
+    </div>
+
+</section>
+<section class="NycImgAfter"></section>
+<section class="NycImgAfter"></section>
+<section class="NycImgAfter"></section>
+<section class="NycImgAfter"></section>
+<section class="NycImgAfter"></section>
+<section class="NycImgAfter"></section>
+<section class="NycImgAfter"></section>
+<section class="NycImgAfter">
+
+</section>
+<section class="NycImgAfter">
+  <video autoplay muted loop poster="../../images/newYork/IMG_2521.jpg" class="bgvid">
+    <source src="../../images/newYork/IMG_2524.m4v" >
+</video>
+</section>
+
+<section class="NycImgAfter"></section>
+<section class="NycImgAfter"></section>
+<section class="NycImgAfter"></section>
+<section class="NycImgAfter"></section>
+<section class="NycImgAfter"></section>
+<section class="NycImgAfter"></section>
+<section class="NycImgAfter">
+
+</section>
+<section class="NycImgAfter">
+  <video autoplay muted loop poster="../../images/newYork/IMG_2597.jpg" class="bgvid">
+    <source src="../../images/newYork/IMG_2600.m4v" >
+</video>
+</section>
+
+<section class="NycImgAfter"></section>
+<section class="NycImgAfter"></section>
+<section class="NycImgAfter"></section>
+<section class="NycImgAfter"></section>
+<section class="NycImgAfter"></section>
+<section class="NycImgAfter"></section>
+<section class="NycImgAfter"></section>
+<section class="NycImgAfter"></section>
+<section class="NycImgAfter"></section>
+<section class="NycImgAfter"></section>
+<section class="NycImgAfter"></section>
+
+<div id="NYCAfterFooter">
+
+  <h1>Thanks for the good times New York City</h1>
+  <div id='nycFootImg'></div>
+  <a ng-href="#/blog">Back to Blog</a>
+</div>
+
+<script>
+  $('#Wonder').click(function(){
+    $('.WonderCover').toggleClass('show');
+  });
+  $('#wonderClose').click(function(){
+    $('.WonderCover').toggleClass('show');
+  });
+</script>

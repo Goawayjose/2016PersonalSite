@@ -24,6 +24,8 @@
   text-align: center;
 }
 
+
+
 .NYIHide {
   margin-top: 100%;
   animation: yeHide 2.5s forwards;
@@ -565,7 +567,7 @@ width: 20px;
 
   .DescSide {
     z-index: 10;
-    position: absolute;
+    position: fixed;
     left: 0px;
     top: 0;
     height: 180px;
@@ -608,12 +610,13 @@ width: 20px;
 
   .DescSide {
     z-index: 10;
-    position: absolute;
+        position: fixed;
     left: 0px;
     top: 0;
     height: 180px;
     width: 100%;
     background-color: rgba(0,0,0, 0.8);
   }
+
 
 }
