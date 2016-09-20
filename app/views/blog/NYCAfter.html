@@ -1,4 +1,7 @@
 <style>
+body {
+  background-color: black;
+}
 
 .logo{
   left: 50%;
@@ -75,9 +78,73 @@
 }
 
 @media all and (max-width: 500px) {
-  .logo{
-
+  .logo {
+    z-index: 99;
+      left: 0;
+      margin-left: 0;
+      font-size: 250px;
+      display: block;
+      height: auto;
+      width: auto;
+      background: transparent;
+      position: relative;
+      color: white;
+      text-align: center;
+      top: -200px;
   }
+
+  .HrtContainer {
+      top: 70px;
+      left: 130px;
+      Height: 260px;
+      width: 260px;
+      position: absolute;
+  }
+
+  #ny {
+      left: 29px;
+      top: 200px;
+      position: absolute;
+  }
+
+#i {
+    left: 43px;
+    top: 0px;
+    position: absolute;
+}
+
+#nycFootImg {
+    background: url(../../images/newYork/IMG_2700.jpg);
+    height: 200px;
+    width: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 0 auto;
+}
+
+}
+
+@media all and (max-width: 390px) {
+    #i {
+      left: -8px;
+      top: 0px;
+      position: absolute;
+  }
+
+  .HrtContainer {
+    top: 70px;
+    left: 62px;
+    Height: 260px;
+    width: 260px;
+    position: absolute;
+}
+
+#ny {
+    left: -17px;
+    top: 200px;
+    position: absolute;
+}
 }
 
 </style>
@@ -126,9 +193,13 @@
 
 </section>
 <section class="NycImgAfter">
-  <video autoplay muted loop poster="../../images/newYork/IMG_2521.jpg" class="bgvid">
+  <video id="background_audio" autoplay muted loop poster="../../images/newYork/IMG_2521.jpg" class="bgvid">
     <source src="../../images/newYork/IMG_2524.m4v" >
-</video>
+  </video>
+
+  <a href="#noscroll" id="mute">
+    <div class="speaker-btn"></div>
+  </a>
 </section>
 
 <section class="NycImgAfter"></section>
@@ -141,9 +212,13 @@
 
 </section>
 <section class="NycImgAfter">
-  <video autoplay muted loop poster="../../images/newYork/IMG_2597.jpg" class="bgvid">
-    <source src="../../images/newYork/IMG_2600.m4v" >
+  <video  id="Killersbackground_audio" autoplay muted loop poster="../../images/newYork/IMG_2597.jpg" class="bgvid">
+    <source src="../../images/newYork/IMG_2593.m4v" >
 </video>
+
+<a href="#noscroll" id="muteKillers">
+  <div class="speaker-btn"></div>
+</a>
 </section>
 
 <section class="NycImgAfter"></section>
@@ -172,4 +247,15 @@
   $('#wonderClose').click(function(){
     $('.WonderCover').toggleClass('show');
   });
+
+
+
+  var audio = document.getElementById('Killersbackground_audio');
+
+document.getElementById('muteKillers').addEventListener('click', function (e)
+{
+    e = e || window.event;
+    audio.muted = !audio.muted;
+    e.preventDefault();
+}, false);
 </script>

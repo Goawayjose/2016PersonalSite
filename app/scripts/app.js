@@ -80,7 +80,17 @@ angular
           templateUrl: 'views/blog/NYCAfter.html',
           controllerAs: 'NYC'
       })
+      .when('/ixdMain', {
+          templateUrl: 'views/blog/IxD1/IXDHome.html',
+          controller: 'blogCtrl',
+          controllerAs: 'blog'
+      })
 
+      .when('/ixdAnimation', {
+          templateUrl: 'views/blog/IxD1/animation.html',
+          controller: 'blogCtrl',
+          controllerAs: 'blog'
+      })
 
 
       .otherwise({
