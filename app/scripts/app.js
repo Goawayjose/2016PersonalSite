@@ -81,13 +81,13 @@ angular
           controllerAs: 'NYC'
       })
       .when('/ixdMain', {
-          templateUrl: 'views/blog/IxD1/IXDHome.html',
+          templateUrl: 'views/blog/IXDHome.html',
           controller: 'blogCtrl',
           controllerAs: 'blog'
       })
 
       .when('/ixdAnimation', {
-          templateUrl: 'views/blog/IxD1/animation.html',
+          templateUrl: 'views/blog/animation.html',
           controller: 'blogCtrl',
           controllerAs: 'blog'
       })
