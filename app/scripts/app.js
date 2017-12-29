@@ -96,6 +96,10 @@ angular
           templateUrl: 'views/blog/ixdWeek2.html'
       })
 
+      .when('/ixdWeek3', {
+          templateUrl: 'views/blog/ixdWeek3.html'
+      })
+
 
       .otherwise({
         redirectTo: '/'

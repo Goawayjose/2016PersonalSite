@@ -1,0 +1,16 @@
+<!-- week 3
+wall haven -->
+
+<div class="container">
+  <div class="IxdAnimation">
+      <h1>PHP Navigation Tricks</h1>
+      <p>
+    I chose to read <a href="http://alistapart.com/article/keepingcurrent" target="_blank">“Keeping Navigation Current with PHP” by Jason Pearce</a> because I use PHP as a routing system at work sometimes. The article was written in 2003 but it’s still very relevant to me. I don’t know half the things PHP can do and I like to learn little things that are applicable without breaking things in PHP applications; easy ones that blend into the HTML.  <br><br>
+The problem was the nav bar needed to emphasize the title of the page it was on. Most simple way is to add ID’s on the li element that represents the current slide for every page on the navbar. PHP lets you create a file and be able to place it dynamically on to other pages so you only have to write it a couple times instead of every time.  Though this is cool we are left wondering how to make the navbar emphasize the page title. So to do that you basically set the a function so when the page runs it will check its title. This function is repeated in every li tag but it checks if it has the title of the corresponding page. If it does, the function will add the ID for styling. You add the $thisPage php call on top of html pages to define the title.  The title is defined before the page even loads and the navigation is included inside of the html tags so when they load the computer has stored and processed the information. This is a very easy trick that basically involves more logic than anything.
+<br><br>
+      <div id="back-Btn">
+        <a ng-href="#/ixdMain">Back</a>
+      </div>
+  
+  </div>
+</div>
